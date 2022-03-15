@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import Router from "../Router.json";
 
@@ -15,10 +16,12 @@ export default function Menu({ routePath }) {
           <div className="header__top--lp__logo">
             <Link href="/">
               <a>
-                <img
+                <Image
                   src="/assets/icons/logo-invertramites-black.svg"
                   alt="Invertrámites Nacionales SAS"
                   className="header__top--lp__logo__svg"
+                  width={100}
+                  height={100}
                 />
               </a>
             </Link>
@@ -39,10 +42,10 @@ export default function Menu({ routePath }) {
                 <div className="header__top--lp__navigation__mobile__nav__overlay">
                   <ul className="header__top--lp__navigation__mobile__nav__overlay__ul">
                     {Router &&
-                      Router.map((route, id) => {
+                      Router.map((route) => {
                         return (
-                          <div>
-                            <Link href={route.path} key={id}>
+                          <div key={route.path}>
+                            <Link href={route.path} >
                               <a
                                 className={
                                   route.path == routePath ? "link--active" : ""
@@ -61,10 +64,10 @@ export default function Menu({ routePath }) {
           </div>
           <div className="header__top--lp__desktop">
             {Router &&
-              Router.map((route, id) => {
+              Router.map((route) => {
                 return (
-                  <div>
-                    <Link href={route.path} key={id}>
+                  <div key={route.path}>
+                    <Link href={route.path} >
                       <a
                         className={
                           route.path == routePath ? "link--active" : ""

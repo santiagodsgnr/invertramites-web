@@ -29,12 +29,12 @@ export default function Catalogo() {
         />
         <meta name="author" content="Santiago Ardila" />
         <meta name="language" content="Spanish" />
-        <meta itemprop="name" content="Santiago Ardila | Frontend Developer" />
+        <meta itemProp="name" content="Santiago Ardila | Frontend Developer" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Somos especialistas en gestiones y trámites legales de todo tipo ante entidades públicas y privadas en temas relacionados con adquisición, revalidación, cesión y descargos de armas de fuego y traumáticas en atención al cumplimiento de los diferentes decretos y reglamentaciones de ley (decreto 2535 de 1993, decreto 1417 del 2021)."
         />
-        <meta itemprop="image" content="" />
+        <meta itemProp="image" content="" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -80,7 +80,7 @@ export default function Catalogo() {
       <section>
         <div className="container">
           <div>
-            <div className="categories">
+            {/* <div className="categories">
               <div className="categories__nav">
                 {Categories &&
                   Categories.map((c, id) => {
@@ -92,6 +92,7 @@ export default function Catalogo() {
                         }`}
                         onClick={() => {
                           setCategorie(c.slug);
+                          console.log(c.slug)
                         }}
                       >
                         <p>{c.categorie}</p>
@@ -99,9 +100,9 @@ export default function Catalogo() {
                     );
                   })}
               </div>
-            </div>
+            </div> */}
           </div>
-          <GridProducts categorie={categorie} setCategorie={setCategorie} />
+          <GridProducts  />
         </div>
       </section>
 

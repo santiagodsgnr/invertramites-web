@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
 
 export default function Servicios() {
-
   const path = useRouter().asPath;
   const [routePath] = useState(path);
 
@@ -26,12 +26,12 @@ export default function Servicios() {
         />
         <meta name="author" content="Santiago Ardila" />
         <meta name="language" content="Spanish" />
-        <meta itemprop="name" content="Santiago Ardila | Frontend Developer" />
+        <meta itemProp="name" content="Santiago Ardila | Frontend Developer" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Somos especialistas en gestiones y trámites legales de todo tipo ante entidades públicas y privadas en temas relacionados con adquisición, revalidación, cesión y descargos de armas de fuego y traumáticas en atención al cumplimiento de los diferentes decretos y reglamentaciones de ley (decreto 2535 de 1993, decreto 1417 del 2021)."
         />
-        <meta itemprop="image" content="" />
+        <meta itemProp="image" content="" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -82,14 +82,15 @@ export default function Servicios() {
         <div className="quienes-somos__grid--column--image">
           <picture>
             <source
-              srcset="/assets/images/image-servicios.jpg"
+              srcSet="/assets/images/image-servicios.jpg"
               media="(min-width: 768px)"
               width="100%"
               alt="Servicios - Invertrámites Nacionales"
             />
-            <img
+            <Image
               src="/assets/images/image-servicios-mobile.jpg"
-              width="100%"
+              width={100}
+              height={100}
               alt="Servicios - Invertrámites Nacionales"
             />
           </picture>

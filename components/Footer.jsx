@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -17,10 +18,12 @@ export default function Footer() {
             </div>
             <Link href="/">
               <a>
-                <img
+                <Image
                   src="/assets/icons/logo-invertramites-white.svg"
                   alt="Invertrámites Nacionales SAS"
                   className="footer__logo--desktop"
+                  width={100}
+                  height={100}
                 />
               </a>
             </Link>
@@ -29,20 +32,24 @@ export default function Footer() {
             <div className="footer__info-user">
               <h3 className="footer__title">Dubis Esther Barrios</h3>
               <div className="footer__info-wrapper">
-                <img
+                <Image
                   src="/assets/icons/icon-telephone.svg"
                   alt="Celular"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="tel:3175917957">
                   <p className="footer__paragraph">3175917957</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
-                <img
+                <Image
                   src="/assets/icons/icon-mail.svg"
                   alt="Email"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="mailto:dubis@invertramitesnacionales.com">
                   <p className="footer__paragraph">
@@ -54,20 +61,24 @@ export default function Footer() {
             <div className="footer__info-user">
               <h3 className="footer__title">Nestor Alexander Duque</h3>
               <div className="footer__info-wrapper">
-                <img
+                <Image
                   src="/assets/icons/icon-telephone.svg"
                   alt="Celular"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="tel:3136853152">
                   <p className="footer__paragraph">3136853152</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
-                <img
+                <Image
                   src="/assets/icons/icon-mail.svg"
                   alt="Email"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="mailto:nestor@invertramitesnacionales.com">
                   <p className="footer__paragraph">
@@ -79,24 +90,28 @@ export default function Footer() {
             <div className="footer__info-user">
               <h3 className="footer__title">Juan David Ramírez</h3>
               <div className="footer__info-wrapper">
-                <img
+                <Image
                   src="/assets/icons/icon-telephone.svg"
                   alt="Celular"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="tel:3118162605">
                   <p className="footer__paragraph">3118162605</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
-                <img
+              <Image
                   src="/assets/icons/icon-mail.svg"
                   alt="Email"
                   className="footer__info-user__icon"
+                  width={15}
+                  height={15}
                 />
                 <a href="mailto:juandavid@invertramitesnacionales.com">
                   <p className="footer__paragraph">
-                    juandavid@invertramitesnacionales.com
+                    jdavid@invertramitesnacionales.com
                   </p>
                 </a>
               </div>
@@ -124,13 +139,28 @@ export default function Footer() {
               <h3 className="footer__title">Síguenos</h3>
               <div className="footer__social-network__icons">
                 <a href="">
-                  <img src="/assets/icons/icon-facebook.svg" alt="Facebook" />
+                  <Image
+                    src="/assets/icons/icon-facebook.svg"
+                    alt="Facebook"
+                    width={30}
+                    height={30}
+                  />
                 </a>
                 <a href="">
-                  <img src="/assets/icons/icon-instagram.svg" alt="Instagram" />
+                  <Image
+                    src="/assets/icons/icon-instagram.svg"
+                    alt="Instagram"
+                    width={30}
+                    height={30}
+                  />
                 </a>
                 <a href="">
-                  <img src="/assets/icons/icon-twitter.svg" alt="Twitter" />
+                  <Image
+                    src="/assets/icons/icon-twitter.svg"
+                    alt="Twitter"
+                    width={30}
+                    height={30}
+                  />
                 </a>
               </div>
             </div>
@@ -166,9 +196,11 @@ export default function Footer() {
               </button>
             </form>
             <div className="footer__logo--mobile">
-              <img
+              <Image
                 src="/assets/icons/logo-invertramites-white.svg"
                 alt="Invertrámites Nacionales SAS"
+                width={100}
+                height={100}
               />
             </div>
           </div>
@@ -181,7 +213,7 @@ export default function Footer() {
           <a
             href="https:/www.santiagoardila.dev"
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
             className="anchor__santiago-ardila"
           >
             Santiago Ardila

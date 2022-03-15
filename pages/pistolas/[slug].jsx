@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import Menu from "../../components/Menu";
 
@@ -30,7 +31,7 @@ export default function Slug() {
         {Products &&
           Products.filter((p) => p.slug === "/" + slug).map((p) => {
             return (
-              <title>
+              <title key={p.name}>
                 {p.categorie} / {p.name}
               </title>
             );
@@ -48,12 +49,12 @@ export default function Slug() {
         />
         <meta name="author" content="Santiago Ardila" />
         <meta name="language" content="Spanish" />
-        <meta itemprop="name" content="Santiago Ardila | Frontend Developer" />
+        <meta itemProp="name" content="Santiago Ardila | Frontend Developer" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Somos especialistas en gestiones y trámites legales de todo tipo ante entidades públicas y privadas en temas relacionados con adquisición, revalidación, cesión y descargos de armas de fuego y traumáticas en atención al cumplimiento de los diferentes decretos y reglamentaciones de ley (decreto 2535 de 1993, decreto 1417 del 2021)."
         />
-        <meta itemprop="image" content="" />
+        <meta itemProp="image" content="" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -85,9 +86,9 @@ export default function Slug() {
       <section className="catalogo-slug">
         <div className="container">
           {Products &&
-            Products.filter((p) => p.slug === "/" + slug).map((p, index) => {
+            Products.filter((p) => p.slug === "/" + slug).map((p) => {
               return (
-                <>
+                <div key={p.name}>
                   <div className="catalogo-slug__breadcrumb">
                     <span>
                       <Link href="/">
@@ -104,10 +105,15 @@ export default function Slug() {
                       / <b>{p.name}</b>
                     </span>
                   </div>
-                  <div className="catalogo-slug__grid-product" key={index}>
+                  <div className="catalogo-slug__grid-product">
                     <div className="catalogo-slug__grid-product__column--image">
-                      <Zoom overlayBgColorEnd={'rgb(255, 255, 255, 100)'}>
-                        <img src={p.image} alt={p.name} width="100%" />
+                      <Zoom overlayBgColorEnd={"rgb(255, 255, 255, 100)"}>
+                        <Image
+                          src={p.image}
+                          alt={p.name}
+                          width={1000}
+                          height={1000}
+                        />
                       </Zoom>
                     </div>
                     <div className="catalogo-slug__grid-product__column--description">
@@ -123,7 +129,7 @@ export default function Slug() {
                       </div>
                     </div>
                   </div>
-                </>
+                </div>
               );
             })}
         </div>
@@ -132,13 +138,13 @@ export default function Slug() {
       <section className="features__mobile">
         <div className="container">
           {Products &&
-            Products.filter((p) => p.slug === "/" + slug).map((p, index) => {
+            Products.filter((p) => p.slug === "/" + slug).map((p) => {
               return (
-                <>
-                  {p.features.map((feature, id) => {
+                <div key={p.categorie}>
+                  {p.features.map((feature) => {
                     return (
-                      <Accordion allowZeroExpanded>
-                        <AccordionItem key={id}>
+                      <Accordion allowZeroExpanded key={feature.name}>
+                        <AccordionItem >
                           <AccordionItemHeading>
                             <AccordionItemButton>
                               {feature.name}
@@ -147,7 +153,7 @@ export default function Slug() {
                           <AccordionItemPanel>
                             {feature.content.map((f) => {
                               return (
-                                <div>
+                                <div key={f.name}>
                                   <div className="features__mobile--grid">
                                     <div>
                                       <p>
@@ -173,7 +179,7 @@ export default function Slug() {
                       </Accordion>
                     );
                   })}
-                </>
+                </div>
               );
             })}
         </div>

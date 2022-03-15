@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
@@ -25,12 +26,12 @@ export default function QuienesSomos() {
         />
         <meta name="author" content="Santiago Ardila" />
         <meta name="language" content="Spanish" />
-        <meta itemprop="name" content="Santiago Ardila | Frontend Developer" />
+        <meta itemProp="name" content="Santiago Ardila | Frontend Developer" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Somos especialistas en gestiones y trámites legales de todo tipo ante entidades públicas y privadas en temas relacionados con adquisición, revalidación, cesión y descargos de armas de fuego y traumáticas en atención al cumplimiento de los diferentes decretos y reglamentaciones de ley (decreto 2535 de 1993, decreto 1417 del 2021)."
         />
-        <meta itemprop="image" content="" />
+        <meta itemProp="image" content="" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -79,16 +80,15 @@ export default function QuienesSomos() {
         </div>
         <div className="quienes-somos__grid--column--image">
           <picture>
-            <source
-              srcset="/assets/images/image-quienes-somos01.jpg"
-              media="(min-width: 768px)"
-              width="100%"
+            <Image
+              src="/assets/images/image-quienes-somos01.jpg"
+              srcSet="/assets/images/image-quienes-somos01-mobile.jpg"
+              width='100%'
+              height='30%'
               alt="Quienes somos- Invertrámites Nacionales"
-            />
-            <img
-              src="/assets/images/image-quienes-somos01-mobile.jpg"
-              width="100%"
-              alt="Quienes somos- Invertrámites Nacionales"
+              layout="responsive"
+              objectFit="cover"
+              quality="100"
             />
           </picture>
         </div>
@@ -129,17 +129,23 @@ export default function QuienesSomos() {
             </div>
           </div>
           <div className="que-hacemos__grid">
-            <img
+            <Image
               src="/assets/images/image-quienes-somos02.jpg"
-              alt=""
-              width="100%"
+              width='100%'
+              height='100%'
+              layout="responsive"
+              objectFit="cover"
               alt="Personal de seguridad"
+              quality='100'
             />
-            <img
+            <Image
               src="/assets/images/image-quienes-somos03.jpg"
-              alt=""
-              width="100%"
+              width='100%'
+              height='100%'
+              layout="responsive"
+              objectFit="cover"
               alt="Elementos tecnológicos"
+              quality="100"
             />
           </div>
         </div>
@@ -158,10 +164,11 @@ export default function QuienesSomos() {
               </p>
             </div>
             <div className="presentaciones__grid--column">
-              <img
+              <Image
                 src="/assets/images/image-representaciones.png"
-                alt=""
-                width="100%"
+                alt="Representaciones"
+                width='300%'
+                height='300%'
               />
             </div>
           </div>
