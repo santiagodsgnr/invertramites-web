@@ -1,0 +1,22 @@
+[
+  {
+    "name": "INICIO",
+    "path": "/"
+  },
+  {
+    "name": "QUIENES SOMOS",
+    "path": "/quienes-somos"
+  },
+  {
+    "name": "SERVICIOS",
+    "path": "/servicios"
+  },
+  {
+    "name": "CATÁLOGO",
+    "path": "/catalogo"
+  },
+  {
+    "name": "CONTACTO",
+    "path": "/contacto"
+  }
+]

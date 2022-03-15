@@ -1,0 +1,61 @@
+.categories {
+  position: relative;
+  bottom: 2rem;
+  &__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+
+    @media only screen and (min-width: 1024px) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &::-webkit-scrollbar,
+    &--tab::-webkit-scrollbar-thumb,
+    &--tab::-webkit-scrollbar-track {
+      visibility: hidden;
+      background: transparent;
+    }
+    &--tab {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 0;
+      flex: 0 0 45%;
+      scroll-snap-align: center;
+      cursor: pointer;
+
+      @media only screen and (min-width: 1024px) {
+        flex: 0 0 12%;
+      }
+      p {
+        font-family: "Rockwell-Regular";
+        font-weight: regular;
+        color: #919191;
+        text-decoration: none;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.categorie--active {
+  p {
+    color: black;
+    font-family: "Rockwell-Bold";
+  }
+}

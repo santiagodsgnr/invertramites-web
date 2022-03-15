@@ -1,0 +1,131 @@
+.header__top--lp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      &__svg {
+        width: 100%;
+      }
+    }
+
+    &__desktop {
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+        &:hover {
+          color: red;
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+
+    &__navigation {
+      &__mobile {
+        background-color: #fc0000;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        z-index: 10;
+        position: relative;
+
+        @media only screen and (min-width: 1024px) {
+          display: none;
+        }
+
+        &__bars,
+        &__bars::after,
+        &__bars::before {
+          transition: all 0.65s;
+          background-color: #fff;
+          border-radius: 0.5rem;
+          bottom: 0;
+          content: "";
+          height: 0.4rem;
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: all 0.65s;
+          width: 2.5rem;
+        }
+
+        &__bars::after {
+          top: -2rem;
+        }
+
+        &__bars::before {
+          top: 2rem;
+        }
+
+        &__nav {
+          &__overlay {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            transition: opacity 650ms;
+            opacity: 1;
+
+            &__ul {
+              position: relative;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+
+            a {
+              display: block;
+              font-size: 2.5rem;
+              padding: 2rem 0;
+              margin: 0 2rem;
+              transition: all 650ms;
+              color: black;
+              text-decoration: none;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .active .header__top--lp__navigation__mobile__bars {
+    background-color: transparent;
+  }
+
+  .active .header__top--lp__navigation__mobile__bars::before {
+    transform: rotate(45deg);
+  }
+
+  .active .header__top--lp__navigation__mobile__bars::after {
+    transform: rotate(-45deg);
+  }
+
+  .active .header__top--lp__navigation__mobile__bars::before,
+  .active .header__top--lp__navigation__mobile__bars::after {
+    top: 0;
+  }

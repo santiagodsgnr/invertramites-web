@@ -1,0 +1,18 @@
+[
+    {
+        "categorie": "PISTOLAS",
+        "slug": "pistolas"
+    },
+    {
+        "categorie": "REVÓLVERES",
+        "slug": "revolveres"
+    },
+    {
+        "categorie": "CARABINAS",
+        "slug": "carabinas"
+    },
+    {
+        "categorie": "ESCOPETAS",
+        "slug": "escopetas"
+    }
+]
