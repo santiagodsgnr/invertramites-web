@@ -211,7 +211,7 @@ export default function Home() {
           <h2 className="title">
             NUESTRO <span className="title__span">CATÁLOGO</span>
           </h2>
-          {/* <GridProductsHome /> */}
+          <GridProductsHome />
           <Link href="/catalogo">
             <a className="button button--principal">VER CATÁLOGO</a>
           </Link>

@@ -1,0 +1,379 @@
+[
+  {
+    "categorie": "pistolas",
+    "image": "/assets/images/pistolas/cordova-estandard.jpg",
+    "name": "Cordova Estandard",
+    "slug": "/cordova-estandard",
+    "subname": "Calibre 9mm",
+    "description": "La Córdova es una pistola semiautomática desarrollada por la Industria Militar Colombiana Indumil, empresa 100% estatal.1​ Fabricada de un polímero reforzado con fibra de vidrio, opera por retroceso de masas el sistema locked breech. Introducida en 2013 por Indumil, es la primera pistola comercial en tener sistema de cajón de mecanismos con el sistema de control de fuego (disparador, fiador y todas las conexiones necesarias).",
+    "link": "https://wa.me/573136853152",
+    "features": [
+      {
+        "name": "CARACTERÍSTICAS BÁSICAS",
+        "content": [
+          {
+            "name": "Fabricante",
+            "description": "Industria Militar Colombiana –INDUMIL-"
+          },
+          {
+            "name": "Tipos",
+            "description": "Compacta - Estándar - Táctica"
+          },
+          {
+            "name": "Sistema de disparo",
+            "description": "Acción doble"
+          },
+          {
+            "name": "Longitud",
+            "description": "94-111.7-130.1 milímetros"
+          },
+          {
+            "name": "Altura",
+            "description": "143.6 milímetros"
+          },
+          {
+            "name": "Ancho",
+            "description": "37.6 milímetros"
+          },
+          {
+            "name": "Peso",
+            "description": "730 a 750 gramos"
+          },
+          {
+            "name": "Alcance efectivo",
+            "description": "25 metros (hasta 90), velocidad del cartucho de 360 metros por segundo"
+          },
+          {
+            "name": "Munición",
+            "description": "9×19 milímetros. Proveedores de 9 a 15 cartuchos"
+          },
+          {
+            "name": "Accesorios",
+            "description": "Mira day/nignt, linterna"
+          }
+        ]
+      },
+      {
+        "name": "CURIOSIDADES",
+        "content": [
+          {
+            "caracteristica": "En servicio desde 2013-al presente"
+          },
+          {
+            "caracteristica": "Más de 10.000 en servicio"
+          },
+          {
+            "caracteristica": "Diseñada en 2010"
+          },
+          {
+            "caracteristica": "Fue usada en el conflicto armado colombiano"
+          }
+        ]
+      },
+      {
+        "name": "+ MÁS",
+        "content": [
+          {
+            "caracteristica": "Empuñadura ajustable (3 tamaños)"
+          },
+          {
+            "caracteristica": "MIL-STD-1913 (Riel Picatinny)"
+          },
+          {
+            "caracteristica": "Cadencia de tiro 4-6 disparos/segundo"
+          },
+          {
+            "caracteristica": "Cargador Extraíble de doble hilera, con capacidades de 15+1"
+          },
+          {
+            "caracteristica": "Cartuchos para fuerzas de seguridad y de 9+1"
+          },
+          {
+            "caracteristica": "Cartuchos para el mercado civil"
+          }
+        ]
+      },
+      {
+        "name": "MIRAS",
+        "content": [
+          {
+            "caracteristica": "Alza y punto de mira (para combate). Retroiluminadas para operaciones nocturnas."
+          },
+          {
+            "caracteristica": "Opcional: Mira de Tritio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "escopetas",
+    "image": "/assets/images/escopetas/mossberg-500.jpg",
+    "name": "Mossberg 500",
+    "slug": "/mossberg-500",
+    "subname": "Calibre 12mm",
+    "description": "La Mossberg 500 es una serie de escopetas fabricadas por O.F. Mossberg & Sons.1​ La serie 500 abarca una amplia variedad de escopetas de corredera con martillo oculto, que comparten el mismo cajón de mecanismos y acción de recarga, pero se distinguen por su calibre, longitud del cañón, chokes opcionales, capacidad del depósito y materiales de la culata y el guardamano. Otros modelos de la serie 500 son la 590, 505 y 535.",
+    "features": [
+      {
+        "name": "CARACTERÍSTICAS BÁSICAS",
+        "content": [
+          {
+            "name": "Fabricante",
+            "description": "O.F. Mossberg & Sons"
+          },
+          {
+            "name": "Modelo",
+            "description": "500 Field (50120)"
+          },
+          {
+            "name": "Sistema de acción",
+            "description": "Corredera"
+          },
+          {
+            "name": "Longitud",
+            "description": "1200 milímetros"
+          },
+          {
+            "name": "Altura",
+            "description": "180 milímetros"
+          },
+          {
+            "name": "Ancho",
+            "description": "30 milímetros"
+          },
+          {
+            "name": "Peso",
+            "description": "3500 gramos"
+          },
+          {
+            "name": "Alcance efectivo",
+            "description": "40 mts"
+          },
+          {
+            "name": "Munición",
+            "description": "12mm"
+          },
+          {
+            "name": "Cargador",
+            "description": "5+1 cartuchos"
+          }
+        ]
+      },
+      {
+        "name": "CURIOSIDADES",
+        "content": [
+          {
+            "caracteristica": "La Mossberg 500 es muy popular debido a su calidad y relativo bajo precio, sin embargo, su precisión no es nada sorprendente"
+          }
+        ]
+      },
+      {
+        "name": "+ MÁS",
+        "content": [
+          {
+            "caracteristica": "Recámara 76 mm"
+          },
+          {
+            "caracteristica": "Cañón pavón banda ventilada con freno"
+          },
+          {
+            "caracteristica": "Propuesta para emplearse en condiciones severas y suciedad. Sencilla de limpiar y mantener"
+          }
+        ]
+      },
+      {
+        "name": "MIRAS",
+        "content": [
+          {
+            "caracteristica": "Culata con pistol grip, que puede regularse en seis posiciones diferentes, y posee una carrillera ajustable para adaptar la altura de miras, ya sea la fija queequipa el arma o el visor óptico que se le instale. Punto de mira dorado."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "revolveres",
+    "image": "/assets/images/revolveres/scorpio-llama.jpg",
+    "name": "Scorpio Llama",
+    "slug": "/scorpio-llama",
+    "subname": "Calibre 38",
+    "description": "El revólver (del inglés revolver; to revolve: 'dar vueltas') es un arma de fuego de repetición que se caracteriza por llevar la munición dispuesta en un tambor o cilindro, a diferencia de la pistola, que designa a las armas de fuego cortas semiautomáticas, que suelen llevar la munición alojada en un cargador. Actualmente las pistolas semiautomáticas han sustituido al revólver en casi todas las actividades correspondientes al uso militar o de fuerzas del orden.",
+    "features": [
+      {
+        "name": "CARACTERÍSTICAS BÁSICAS",
+        "content": [
+          {
+            "name": "Fabricante",
+            "description": "Llama Gabilondo & CIA"
+          },
+          {
+            "name": "Modelo",
+            "description": "Scorpio"
+          },
+          {
+            "name": "Sistema de disparo",
+            "description": "Doble y simple acción"
+          },
+          {
+            "name": "Longitud",
+            "description": "180 milímetros"
+          },
+          {
+            "name": "Altura",
+            "description": "120 milímetros"
+          },
+          {
+            "name": "Ancho",
+            "description": "28 milímetros"
+          },
+          {
+            "name": "Peso",
+            "description": "840 gramos"
+          },
+          {
+            "name": "Alcance efectivo",
+            "description": "20 mts"
+          },
+          {
+            "name": "Calibre",
+            "description": "39"
+          },
+          {
+            "name": "Cargador",
+            "description": "6 cartuchos"
+          }
+        ]
+      },
+      {
+        "name": "CURIOSIDADES",
+        "content": [
+          {
+            "caracteristica": "Es un arma comunmente utilizada para defensa personal, su corto cañón es aprovechado para ocultarla de la vista"
+          }
+        ]
+      },
+      {
+        "name": "+ MÁS",
+        "content": [
+          {
+            "caracteristica": "Acero, empuñadora en madera con picadura y anagrama de LLAMA"
+          },
+          {
+            "caracteristica": "Acabado superficial: Pavonado o cromado - Brillante o mate"
+          },
+          {
+            "caracteristica": "Empuñadora ergonómica"
+          },
+          {
+            "caracteristica": "Acabado superficial pavonado o Cromado / Brillante o Mate"
+          }
+        ]
+      },
+      {
+        "name": "MIRAS",
+        "content": [
+          {
+            "caracteristica": "Fijas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "carabinas",
+    "image": "/assets/images/carabinas/browling-22g.jpg",
+    "name": "Browling 22g",
+    "slug": "/browling-22g",
+    "subname": "Calibre 22LR",
+    "description": "La Carabina - Rifle semiautomático Browning 22G, también conocido como semiautomático 22 o SA-22, es un rifle de desmontaje producido por FN Herstal basado en una patente de John Browning. Es producido actualmente por Browning como Semi-Auto 22. La producción comenzó en 1914 y continuó hasta 1973 en Bélgica y la producción continuó en 1974 en Japón por Miroku. Fue exportado por primera vez por FN para el mercado estadounidense.",
+    "features": [
+      {
+        "name": "CARACTERÍSTICAS BÁSICAS",
+        "content": [
+          {
+            "name": "Fabricante",
+            "description": "FN Herstal"
+          },
+          {
+            "name": "Modelo",
+            "description": "22G - 22 o SA-22"
+          },
+          {
+            "name": "Sistema de acción",
+            "description": "Semiautomático"
+          },
+          {
+            "name": "Longitud",
+            "description": "3343 milímetros"
+          },
+          {
+            "name": "Altura",
+            "description": "120 milímetros"
+          },
+          {
+            "name": "Ancho",
+            "description": "163 milímetros"
+          },
+          {
+            "name": "Peso",
+            "description": "32 milímetros"
+          },
+          {
+            "name": "Alcance efectivo",
+            "description": "52 mts"
+          },
+          {
+            "name": "Munición",
+            "description": "22 LR"
+          },
+          {
+            "name": "Cargador",
+            "description": "18, 9 o hasta 5"
+          }
+        ]
+      },
+      {
+        "name": "CURIOSIDADES",
+        "content": [
+          {
+            "caracteristica": "Remington fabricó una versión más liviana bajo licencia de 1919-1935 como Remington Model 24, y luego la reemplazó con la Remington Modelo 241"
+          }
+        ]
+      },
+      {
+        "name": "+ MÁS",
+        "content": [
+          {
+            "caracteristica": "Báscula de Acero"
+          },
+          {
+            "caracteristica": "Grado de madera: Grado 2"
+          },
+          {
+            "caracteristica": "Culata: Culata inglesa"
+          },
+          {
+            "caracteristica": "Guardamano: Round"
+          },
+          {
+            "caracteristica": "Cañón: Standard"
+          },
+          {
+            "caracteristica": "Acabado: Cañón pavonado"
+          },
+          {
+            "caracteristica": "Acabado: Cañón pavonado"
+          }
+        ]
+      },
+      {
+        "name": "MIRAS",
+        "content": [
+          {
+            "caracteristica": "Punto de mira fija."
+          }
+        ]
+      }
+    ]
+  }
+]
