@@ -117,13 +117,14 @@ span {
   text-align: left;
   font-weight: 300;
   margin: 1.5rem 0;
+  font-family: "Rockwell-Bold";
 
   @media only screen and (min-width: 1024px) {
     font-size: 6rem;
   }
 
   &__span {
-    font-family: "Rockwell-Bold";
+    font-family: "Rockwell-Bold" !important;
   }
 }
 
