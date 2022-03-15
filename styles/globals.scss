@@ -36,7 +36,7 @@ section {
 }
 
 span {
-  font-weight: "Rockwell-Bold";
+  font-family: "Rockwell-Bold";
 } 
 
 .container {
@@ -117,7 +117,6 @@ span {
   text-align: left;
   font-weight: 300;
   margin: 1.5rem 0;
-  font-family: "Rockwell-Bold";
 
   @media only screen and (min-width: 1024px) {
     font-size: 6rem;
