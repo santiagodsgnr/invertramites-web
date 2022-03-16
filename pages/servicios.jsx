@@ -81,16 +81,12 @@ export default function Servicios() {
         </div>
         <div className="quienes-somos__grid--column--image">
           <picture>
-            <source
-              srcSet="/assets/images/image-servicios.jpg"
-              media="(min-width: 768px)"
-              width="100%"
-              alt="Servicios - Invertrámites Nacionales"
-            />
             <Image
-              src="/assets/images/image-servicios-mobile.jpg"
-              width={100}
-              height={100}
+              src="/assets/images/image-servicios.jpg"
+              srcSet="/assets/images/image-servicios-mobile.jpg"
+              width='100%'
+              height='30%'
+              layout="responsive"
               alt="Servicios - Invertrámites Nacionales"
             />
           </picture>
