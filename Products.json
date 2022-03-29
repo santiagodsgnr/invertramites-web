@@ -1751,6 +1751,92 @@
     ]
   },
   {
+    "categorie": "pistolas",
+    "image": "/assets/images/pistolas/walter-p22.jpg",
+    "name": "Walter P22",
+    "slug": "/walter-p22",
+    "subname": "Calibre 9mm",
+    "description": "La Walther P-22 es una versión deportiva, de menor tamaño y en calibre .22lr, de la ubícua P-99, arma policial y militar en 9 m/m Parabellum que, desde mediados de los años 90, se ha convertido en estandarte y producto principal de la firma. El objetivo de la P-22 es ofrecer un producto atractivo para el tiro informal o “plinking”, habitual en países como Estados Unidos, así como a tiradores deportivos que buscan un arma de calidad a un precio competitivo.",
+    "link": "https://wa.me/573136853152",
+    "features": [
+      {
+        "name": "CARACTERÍSTICAS BÁSICAS",
+        "content": [
+          {
+            "name": "Fabricante",
+            "description": "Carl Walther Sportwaffen"
+          },
+          {
+            "name": "Modelo",
+            "description": "P-22"
+          },
+          {
+            "name": "Sistema de disparo",
+            "description": "Recarga por retroceso"
+          },
+          {
+            "name": "Longitud",
+            "description": "159 milímetros"
+          },
+          {
+            "name": "Altura",
+            "description": "114 milímetros"
+          },
+          {
+            "name": "Ancho",
+            "description": "28 milímetros"
+          },
+          {
+            "name": "Peso",
+            "description": "430 gramos"
+          },
+          {
+            "name": "Alcance efectivo",
+            "description": "50 mts"
+          },
+          {
+            "name": "Munición",
+            "description": "9mm"
+          },
+          {
+            "name": "Cargador",
+            "description": "10 cartuchos"
+          }
+        ]
+      },
+      {
+        "name": "CURIOSIDADES",
+        "content": [
+          {
+            "caracteristica": "La P99 tiene un armazón depolímero y corredera de metal, tratada con 'Tenifer', un proceso que inhibe la corrosión"
+          }
+        ]
+      },
+      {
+        "name": "+ MÁS",
+        "content": [
+          {
+            "caracteristica": "Los tiradores zurdos y diestros apreciarán los controles ambidestros de la P99"
+          },
+          {
+            "caracteristica": "Cada pistola es inspeccionada y aprobada para asegurarse que se encuentra dentro de los estándares rígidos fijados por la policía alemana"
+          },
+          {
+            "caracteristica": "Garantizan un manejo seguro y fiable"
+          }
+        ]
+      },
+      {
+        "name": "MIRAS",
+        "content": [
+          {
+            "caracteristica": "Alza y punto de mira."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "categorie": "escopetas",
     "image": "/assets/images/escopetas/mossberg-500.jpg",
     "name": "Mossberg 500",
