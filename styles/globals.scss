@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  -webkit-touch-callout: none; 
 }
 
 @font-face {
@@ -33,6 +33,10 @@ section {
   @media only screen and (min-width: 768px) {
     padding: 5rem 0;
   }
+}
+
+::selection {
+  background-color: red;
 }
 
 span {

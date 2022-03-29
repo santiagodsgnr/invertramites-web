@@ -80,7 +80,7 @@ export default function Catalogo() {
       <section>
         <div className="container">
           <div>
-            {/* <div className="categories">
+            <div className="categories">
               <div className="categories__nav">
                 {Categories &&
                   Categories.map((c, id) => {
@@ -92,7 +92,6 @@ export default function Catalogo() {
                         }`}
                         onClick={() => {
                           setCategorie(c.slug);
-                          console.log(c.slug)
                         }}
                       >
                         <p>{c.categorie}</p>
@@ -100,9 +99,9 @@ export default function Catalogo() {
                     );
                   })}
               </div>
-            </div> */}
+            </div>
           </div>
-          <GridProducts  />
+          <GridProducts categorie={categorie}  />
         </div>
       </section>
 

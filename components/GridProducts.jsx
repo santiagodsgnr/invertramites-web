@@ -8,9 +8,9 @@ export default function GridProducts({ categorie }) {
   return (
     <div className="nuestro-catalogo__grid">
       {Products &&
-        Products.map((p) => {
+        Products.filter((p) => p.categorie === categorie).map((p, index) => {
           return (
-            <Link href={`${p.categorie}/${p.slug}`} key={p.categorie}>
+            <Link href={`${p.categorie}${p.slug}`} key={index}>
               <a href="" className="nuestro-catalogo__link">
                 <div className="nuestro-catalogo__grid--column">
                   <Image src={p.image} alt={p.name} width={300} height={300} />

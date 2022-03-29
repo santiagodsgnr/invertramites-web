@@ -155,7 +155,7 @@ export default function QuienesSomos() {
         <div className="container">
           <div className="presentaciones__grid">
             <div className="presentaciones__grid--column">
-              <h2 className="title">PRESENTACIONES</h2>
+              <h2 className="title">REPRESENTACIONES</h2>
               <p className="paragraph">
                 Representamos a personas naturales y/o jurídicas ante entidades
                 públicas y privadas (Superintendencia de seguridad y vigilancia,
