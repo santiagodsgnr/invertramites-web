@@ -209,7 +209,7 @@ export default function Footer() {
 
       <div className="copyright">
         <span>
-          Copyright © 2022 © Invertrámites S.A.S <br /> Desarrollado por:{" "}
+          Copyright © 2022 © Invertrámites Nacionales S.A.S <br /> Desarrollado por:{" "}
           <a
             href="https:/www.santiagoardila.dev"
             target="_blank"
