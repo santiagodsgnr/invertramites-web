@@ -1,0 +1,6 @@
+---
+deployment:
+  task: 
+  - export DEPLOYPATH=/home/invertr1/public_html
+  - /bin/rsync -av public/ $DEPLOYPATH
+  
