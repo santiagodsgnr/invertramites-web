@@ -1,12 +1,34 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import ModalForm from "../components/ModalForm";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
+
+import db from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 export default function Contacto() {
   const path = useRouter().asPath;
   const [routePath] = useState(path);
+
+  const [formData, setFormData] = useState();
+
+  const [modalForm, setModalForm] = useState(false)
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addDoc(collection(db, "mensajesFormulario"), {
+      ...formData,
+    });
+    e.target.reset();
+    setModalForm(true)
+  };
 
   return (
     <div className="transition-page">
@@ -57,6 +79,8 @@ export default function Contacto() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {modalForm && <ModalForm setModalForm={setModalForm}/>}
+
       <Menu routePath={routePath} />
 
       <section className="quienes-somos">
@@ -66,35 +90,64 @@ export default function Contacto() {
           </h2>
           <div className="quienes-somos__grid">
             <div className="quienes-somos__grid--column--text">
-              <form className="contacto__form">
+              <form className="contacto__form" onSubmit={handleSubmit}>
                 <div className="contacto__form__box">
                   <label htmlFor="nombre">
                     <span>Nombre y apellido*</span>
-                    <input type="text" name="" id="nombre" required />
+                    <input
+                      type="text"
+                      name="nombreCompleto"
+                      id="nombre"
+                      required
+                      onChange={handleInputChange}
+                    />
                   </label>
                 </div>
                 <div className="contacto__form__box">
                   <label htmlFor="telefono">
                     <span>Teléfono*</span>
-                    <input type="tel" name="" id="telefono" required />
+                    <input
+                      type="tel"
+                      name="telefono"
+                      id="telefono"
+                      required
+                      onChange={handleInputChange}
+                    />
                   </label>
                 </div>
                 <div className="contacto__form__box">
                   <label htmlFor="email">
                     <span>Correo electrónico*</span>
-                    <input type="email" name="" id="email" required />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                      onChange={handleInputChange}
+                    />
                   </label>
                 </div>
                 <div className="contacto__form__box">
                   <label htmlFor="ciudad">
                     <span>Ciudad*</span>
-                    <input type="text" name="" id="ciudad" required />
+                    <input
+                      type="text"
+                      name="ciudad"
+                      id="ciudad"
+                      required
+                      onChange={handleInputChange}
+                    />
                   </label>
                 </div>
                 <div className="contacto__form__box">
                   <label htmlFor="mensaje">
                     <span>Mensaje*</span>
-                    <textarea name="" id="mensaje" required></textarea>
+                    <textarea
+                      name="mensaje"
+                      id="mensaje"
+                      required
+                      onChange={handleInputChange}
+                    ></textarea>
                   </label>
                 </div>
                 <input

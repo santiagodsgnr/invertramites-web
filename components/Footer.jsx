@@ -1,8 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import db from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
+
 export default function Footer() {
+
+  const [dataSubscribe, setDataSubscribe] = useState();
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setDataSubscribe({ ...dataSubscribe, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addDoc(collection(db, "datosSubscripciones"), {
+      ...dataSubscribe,
+    });
+    e.target.reset();
+  };
+
+
   return (
     <div>
       <footer className="footer">
@@ -167,14 +187,15 @@ export default function Footer() {
           </div>
           <div className="footer__grid--column">
             <h3 className="footer__title">Suscríbete a nuestro boletín</h3>
-            <form className="footer__form">
+            <form className="footer__form" onSubmit={handleSubmit}>
               <input
                 type="email"
-                name=""
-                id=""
+                name="email"
+                id="email"
                 required
                 placeholder="Escribe tu E-mail"
                 className="footer__form__input--email"
+                onChange={handleInputChange}
               />
               <div className="footer__form__checkbox">
                 <input

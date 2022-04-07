@@ -5,6 +5,7 @@ import '../styles/menu.scss'
 import '../styles/catalog.scss'
 import '../styles/slug.scss'
 import '../styles/contacto.scss'
+import '../styles/ModalForm.scss'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
