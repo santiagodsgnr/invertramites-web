@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import GridProductsHome from "../components/GridProductsHome";
 import { useRouter } from "next/router";
 
-
 import Router from "../Router.json";
 
 export default function Home() {
