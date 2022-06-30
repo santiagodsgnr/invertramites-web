@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import "../styles/globals.scss";
+import Script from "next/script";
 import { useRouter } from "next/router";
+import * as gtag from "../lib/gtag";
 import "../styles/home.scss";
 import "../styles/quienes-somos.scss";
 import "../styles/menu.scss";
@@ -24,7 +26,7 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
   return (
     <>
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
@@ -41,7 +43,7 @@ function MyApp({ Component, pageProps }) {
             });
           `,
         }}
-      /> */}
+      />
       <Component {...pageProps} />
     </>
   );
