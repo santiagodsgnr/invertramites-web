@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-import db from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+import app from "../firebase";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 
 export default function Footer() {
 
@@ -16,7 +15,7 @@ export default function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addDoc(collection(db, "datosSubscripciones"), {
+    addDoc(collection(getFirestore(app), "datosSubscripciones"), {
       ...dataSubscribe,
     });
     e.target.reset();

@@ -4,16 +4,13 @@ import Footer from "../components/Footer";
 import ModalForm from "../components/ModalForm";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
-
-import db from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+import app from "../firebase";
+import { getFirestore, addDoc, collection  } from "firebase/firestore";
 
 export default function Contacto() {
   const path = useRouter().asPath;
   const [routePath] = useState(path);
-
   const [formData, setFormData] = useState();
-
   const [modalForm, setModalForm] = useState(false)
 
   const handleInputChange = (e) => {
@@ -23,7 +20,7 @@ export default function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addDoc(collection(db, "mensajesFormulario"), {
+    addDoc(collection(getFirestore(app), "mensajesFormulario"), {
       ...formData,
     });
     e.target.reset();

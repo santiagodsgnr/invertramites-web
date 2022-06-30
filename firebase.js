@@ -1,7 +1,6 @@
+import { initializeApp, getApp, getApps, FirebaseApp } from "firebase/app"
 
-
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+let app = FirebaseApp
 
 const firebaseConfig = {
   apiKey: "AIzaSyB35eDmOSwBBDp7Z0Af6yhjulL9Bh_SkyI",
@@ -10,14 +9,15 @@ const firebaseConfig = {
   storageBucket: "invertramites-db.appspot.com",
   messagingSenderId: "391620903293",
   appId: "1:391620903293:web:157aa309a3f16623404c14",
-  measurementId: "G-F36KSFZHM7"
+  measurementId: "G-F36KSFZHM7",
 };
 
+if(getApps().length) {
+  app = getApp()
+} else {
+  initializeApp(firebaseConfig)
+}
 
 
-const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
-
-export default db
-
+export default app;

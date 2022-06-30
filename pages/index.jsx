@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import GridProductsHome from "../components/GridProductsHome";
 import { useRouter } from "next/router";
-
-import Script from "next/script";
+import app from "../firebase";
+import { getAnalytics } from "firebase/analytics";
 
 import Router from "../Router.json";
 
@@ -15,19 +15,12 @@ export default function Home() {
   const path = useRouter().asPath;
   const [routePath] = useState(path);
 
+  useEffect(() => {
+    getAnalytics(app);
+  }, []);
+
   return (
     <div className="transition-page">
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-F36KSFZHM7"
-      >
-        {` window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F36KSFZHM7');`}
-      </Script>
       <Head>
         <title>Invertrámites Nacionales | Bienvenidos</title>
         <meta
