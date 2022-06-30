@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import ModalForm from "../components/ModalForm";
@@ -6,6 +6,7 @@ import Menu from "../components/Menu";
 import { useRouter } from "next/router";
 import app from "../firebase";
 import { getFirestore, addDoc, collection  } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 
 export default function Contacto() {
   const path = useRouter().asPath;
@@ -26,6 +27,10 @@ export default function Contacto() {
     e.target.reset();
     setModalForm(true)
   };
+
+  useEffect(() => {
+    getAnalytics(app);
+  }, []);
 
   return (
     <div className="transition-page">

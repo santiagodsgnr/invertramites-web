@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
+import { getAnalytics } from "firebase/analytics";
 
 export default function Servicios() {
   const path = useRouter().asPath;
   const [routePath] = useState(path);
+
+  useEffect(() => {
+    getAnalytics(app);
+  }, []);
 
   return (
     <div className="transition-page">

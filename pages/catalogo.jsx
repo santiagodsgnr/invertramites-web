@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
-
+import { getAnalytics } from "firebase/analytics";
 import GridProducts from "../components/GridProducts";
 import Categories from "../Categories.json";
 
 export default function Catalogo() {
   const path = useRouter().asPath;
   const [routePath] = useState(path);
-
   const [categorie, setCategorie] = useState("pistolas");
+
+  useEffect(() => {
+    getAnalytics(app);
+  }, []);
+
+  
   return (
     <div className="transition-page">
       <Head>
