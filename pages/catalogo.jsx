@@ -5,6 +5,7 @@ import Menu from "../components/Menu";
 import { useRouter } from "next/router";
 import { getAnalytics } from "firebase/analytics";
 import GridProducts from "../components/GridProducts";
+import app from "../firebase";
 import Categories from "../Categories.json";
 
 export default function Catalogo() {

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useRouter } from "next/router";
+import app from "../firebase";
 import { getAnalytics } from "firebase/analytics";
 
 export default function Servicios() {
