@@ -116,8 +116,14 @@ export default function Footer() {
                   width={15}
                   height={15}
                 />
-                <a href="tel:3118162605">
-                  <p className="footer__paragraph">3118162605</p>
+                <a href="tel:3189701156">
+                  <p className="footer__paragraph">3189701156</p>
+                </a>
+                <a href="tel:3189705636">
+                  <p className="footer__paragraph">3189705636</p>
+                </a>
+                <a href="tel:6015386161">
+                  <p className="footer__paragraph">6015386161</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
@@ -229,9 +235,9 @@ export default function Footer() {
 
       <div className="copyright">
         <span>
-          Copyright © 2022 © Invertrámites Nacionales S.A.S <br /> Desarrollado por:{" "}
+          Copyright © 2025 © Invertrámites Nacionales S.A.S <br /> Desarrollado por:{" "}
           <a
-            href="https:/www.santiagoardila.dev"
+            href="https:/www.santiagodvlpr.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="anchor__santiago-ardila"
