@@ -237,7 +237,7 @@ export default function Footer() {
         <span>
           Copyright © 2025 © Invertrámites Nacionales S.A.S <br /> Desarrollado por:{" "}
           <a
-            href="https:/www.santiagodvlpr.vercel.app"
+            href="https://www.santiagodvlpr.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="anchor__santiago-ardila"
