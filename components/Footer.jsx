@@ -58,8 +58,8 @@ export default function Footer() {
                   width={15}
                   height={15}
                 />
-                <a href="tel:3175917957">
-                  <p className="footer__paragraph">3175917957</p>
+                <a href="tel:3189701156">
+                  <p className="footer__paragraph">3189701156</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
@@ -87,8 +87,8 @@ export default function Footer() {
                   width={15}
                   height={15}
                 />
-                <a href="tel:3136853152">
-                  <p className="footer__paragraph">3136853152</p>
+                <a href="tel:3189705636">
+                  <p className="footer__paragraph">3189705636</p>
                 </a>
               </div>
               <div className="footer__info-wrapper">
@@ -116,12 +116,6 @@ export default function Footer() {
                   width={15}
                   height={15}
                 />
-                <a href="tel:3189701156">
-                  <p className="footer__paragraph">3189701156</p>
-                </a>
-                <a href="tel:3189705636">
-                  <p className="footer__paragraph">3189705636</p>
-                </a>
                 <a href="tel:6015386161">
                   <p className="footer__paragraph">6015386161</p>
                 </a>
